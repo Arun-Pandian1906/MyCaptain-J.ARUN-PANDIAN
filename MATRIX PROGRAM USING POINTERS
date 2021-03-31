@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+//create an array
+int *array[3][3];
+int i,j;
+//input elements
+printf("Input elements in the matrix :-\n ");
+for(i=0;i<3;i++)
+{
+    for(j=0;j<3;j++)
+    {
+         printf("element[%d][%d]\n",i,j);
+         scanf("%d",*(array+i)+j);
+    }
+}
+
+//display elements
+printf("The matrix is :-\n");
+for(i=0;i<3;i++)
+{
+    for(j=0;j<3;j++)
+    {
+        printf("%d \t",*(*(array+i)+j));
+    }
+    printf("\n\n\n");
+}
+//sum of diagonal elements
+int sum;
+int k;
+printf("\n Diagonal Elements are :-");
+for(k=0;k<3;k++)
+{
+    printf("\n %d",*(*(array+k)+k));
+    sum=(sum+array[k][k]);
+}
+printf("\n Sum of the diagonal element is :- %d",sum);
+}
