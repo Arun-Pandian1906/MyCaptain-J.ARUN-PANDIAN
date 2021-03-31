@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int a=16,b=67; // Varibale declearation
+    printf("Number before swapping are :-  A=%d and B=%d ",a,b); // print value before applying logical operation
+    a=a+b; //logic of the code for swapping numbers
+    b=a-b;
+    a=a-b;
+    printf("\n After Swapping Numbers are :- A=%d and B=%d  ",a,b); // Print the output 
+    return 0;
+}
